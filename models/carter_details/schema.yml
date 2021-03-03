@@ -1,0 +1,61 @@
+version: 2
+
+sources:
+  - name: customer_profile
+    schema: public
+    database: dev
+    description: '{{ doc("customer_profile")}}'
+    tables:
+      - name: customer_details
+
+
+  - name: order_profile
+    schema: public
+    database: dev
+    description: '{{ doc("order_profile")}}'
+    tables:
+      - name: order_details
+      
+  - name: product_profile
+    schema: public
+    database: dev
+    description: '{{ doc("product_profile")}}'
+    tables:
+      - name: product_details
+
+  - name: delivery_profile
+    schema: public
+    database: dev
+    description: '{{ doc("delivery_profile")}}'
+    tables:
+      - name: delivery_details
+
+  - name: price_details
+    schema: public
+    database: dev
+    description: '{{ doc("price_details")}}'
+    tables:
+      - name: price_details
+
+  - name: carter_master
+    schema: public
+    database: dev
+    description: '{{ doc("price_details")}}'
+    tables:
+      - name: carter_master
+
+models:
+  - name: carter_details
+    description: '{{ doc("carter_details")}}'
+ 
+  - name: final_details
+    description: '{{ doc("final_details")}}'
+
+  - name: carter_master
+    description: '{{ doc("carter_details")}}'
+ 
+  - name: product_price
+    description: '{{ doc("product_price")}}'
+ 
+  - name: transaction_details
+    description: '{{ doc("transaction_details")}}'
